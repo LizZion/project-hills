@@ -16,7 +16,7 @@
 
         header {
             display: flex;
-            font-size: 10px;
+            font-size: 10vw;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
@@ -25,10 +25,10 @@
 
         .header2 {
             display: flex;
-            font-size: 15px;
+            font-size: 1.225vw;
             flex-direction: row;
             justify-content: flex-start;
-            align-items: flex-start;
+            align-items: center;
         }
 
         h1 {
@@ -37,7 +37,7 @@
         }
 
         h2 {
-            font-size: 20px;
+            font-size: 1.5vw;
             color: white;
             text-shadow: 0 0 8px rgb(255, 0, 204);
         }
@@ -76,11 +76,10 @@
             border-radius: 25%;
         }
 
-        .active{
+        .active {
             background-color: rgba(255, 255, 255, 0.215);
             border-radius: 20%;
         }
-
     </style>
 </head>
 
@@ -88,10 +87,14 @@
     <div class="navBar">
         <header>
             <div class="header2">
-                <img style="
-                    width: 5rem;
-                    height: 4.5rem;" src="imgs/icon.png">
-                <h1 style="margin-left: -0.5vw;">PROJECT HILLS</h1>
+                <a href="index.html">
+                    <img style="
+                        width: 5rem;
+                        height: 4.5rem;" src="imgs/icon.png">
+                </a>
+                <a href="index.html">
+                    <h1>PROJECT HILLS</h1>
+                </a>
             </div>
         </header>
         <a class="active" href="index.html">
@@ -100,7 +103,9 @@
         <a href="produtos.html">
             <h2>PRODUTOS</h2>
         </a>
-        <h2>HISTÓRIA</h2>
+        <a href="história.html">
+            <h2>HISTÓRIA</h2>
+        </a>
         <h2>CONTATO</h2>
     </div>
     <div class="content">
