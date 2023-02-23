@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>PROJECT HILLS</title>
+    <link rel="icon" href="imgs/icon.png">
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-image: url(imgs/FUNDO.webp);
+            background-size: cover;
+        }
+
+        header {
+            display: flex;
+            font-size: 10vw;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .header2 {
+            display: flex;
+            font-size: 1.225vw;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 0 0 8px rgb(255, 0, 204);
+        }
+
+        h2 {
+            font-size: 1.5vw;
+            color: white;
+            text-shadow: 0 0 8px rgb(255, 0, 204);
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 25vh;
+        }
+
+        .flexglob {
+            display: flex;
+            flex-direction: row;
+            margin-top: -10vh;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .itens {
+            display: flex;
+            flex-direction: row;
+            justify-content: center
+        }
+
+        .navBar {
+            width: 100vw;
+            height: 10vh;
+            background-color: rgba(255, 0, 149, 0.269);
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .itens>img {
+            background-color: rgba(169, 169, 169, 0.121);
+            width: 10rem;
+            border-radius: 25%;
+        }
+
+        .active {
+            background-color: rgba(255, 255, 255, 0.215);
+            border-radius: 20%;
+        }
+
+        label {
+            color: white;
+            font-family: papyrus;
+            font-size: 2vw;
+            text-shadow: 0px 0px 4px #ff00ff;
+        }
+
+        .myButton {
+            box-shadow: inset 0px 0px 0px 0px #000000;
+            background: linear-gradient(to bottom, #dc17ff 5%, #f711d1 100%);
+            background-color: #dc17ff;
+            border-radius: 32px;
+            border: 1px solid #000000;
+            display: inline-block;
+            cursor: pointer;
+            color: #333333;
+            font-family: Verdana;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 6px 24px;
+            text-decoration: none;
+            text-shadow: 0px 0px 1px #ff00ff;
+        }
+
+        .myButton:hover {
+            background: linear-gradient(to bottom, #f711d1 5%, #dc17ff 100%);
+            background-color: #f711d1;
+        }
+
+        .myButton:active {
+            position: relative;
+            top: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navBar">
+        <header>
+            <div class="header2">
+                <a href="index.html">
+                    <img style="
+                    width: 5rem;
+                    height: 4.5rem;" src="imgs/icon.png">
+                </a>
+                <a href="index.html">
+                    <h1>PROJECT HILLS</h1>
+                </a>
+            </div>
+        </header>
+        <a href="index.html">
+            <h2>PÁGINA INICIAL</h2>
+        </a>
+        <a href="produtos.html">
+            <h2>PRODUTOS</h2>
+        </a>
+        <a href="história.html">
+            <h2>HISTÓRIA</h2>
+        </a>
+        <a class="active" href="contato.html">
+            <h2>CONTATO</h2>
+        </a>
+    </div>
+    <div class="flexglob">
+        <div class="content">
+            <img src="imgs/icon.png" style="width: 15vw;">
+            <h1>CONTATO</h1>
+            <form>
+                <label for="email">EMAIL:</label>
+                <input type="text" id="email" name="email"><br><br>
+                <label for="msg">MENSAGEM:</label>
+                <input type="text" id="msg" name="msg"><br><br>
+                <input type="submit" class="myButton">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
