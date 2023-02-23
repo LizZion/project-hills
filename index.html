@@ -43,18 +43,16 @@
         }
 
         .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            margin-top: 25vh;
-        }
-
-        .itens {
+            overflow: hidden;
             display: flex;
             flex-direction: row;
-            justify-content: center
+            justify-content: space-between;
+            text-align: center;
+            margin-top: 11.25vh;
+            width: 80vw;
+            height: 80vh;
+            background-color: rgba(255, 255, 255, 0.10);
+            box-shadow: 10px 10px rgba(255, 1, 213, 0.63);
         }
 
         .navBar {
@@ -80,7 +78,14 @@
             background-color: rgba(255, 255, 255, 0.215);
             border-radius: 20%;
         }
-    </style>
+
+        .css1
+ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }   
+ </style>
 </head>
 
 <body>
@@ -110,15 +115,13 @@
             <h2>CONTATO</h2>
         </a>
     </div>
+    <div class="css1">
     <div class="content">
         <a href="produtos.html">
-            <h1 style="font-family: papyrus">SUA DIVERSÃO</h1>
-            <div class="itens">
-                <img src="imgs/icon.png">
-            </div>
-            <h1 style="font-family: papyrus">É A NOSSA BÊNÇÃO!</h1>
+          <img style="height:40vw; width: 80vw;" src="imgs/banner.png">
         </a>
     </div>
+</div>
 </body>
 
 </html>
